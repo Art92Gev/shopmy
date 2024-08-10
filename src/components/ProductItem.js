@@ -4,7 +4,7 @@ import './styles/ProductItem.css';
 
 function ProductItem({ product }) {
 	const sendToTelegram = () => {
-		const chatId = "ROADPOLICEbot";
+		const chatId = "Artur0192121";
 		const productUrl = `https://${window.location.hostname}/product/${product.id}`;
 		const message = `Название: ${product.name}\nОписание: ${product.description}\nЦена: ${product.price} руб.\n ||${product.images[0].thumbnail}|| \n ${productUrl}`;
 	
