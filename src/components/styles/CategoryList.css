@@ -1,0 +1,27 @@
+.category-list {
+  margin: 0px auto;
+  text-align: left;
+  width: 60%;
+  transform: translateY(100%);
+}
+
+.category-list ul {
+  list-style: none;
+  font-size: 31px;
+  padding-bottom: 30px;
+}
+
+.category-list li {
+  border: 1px solid;
+  margin: 10px;
+  padding: 10px;
+}
+
+.category-list li:hover {
+  background: green;
+}
+
+.category-list a {
+  color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

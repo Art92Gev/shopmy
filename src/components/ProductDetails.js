@@ -3,6 +3,8 @@ import { useParams, useNavigate } from 'react-router-dom';
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
 import products from './data/products';
+import './styles/ProductDetails.css';
+
 
 function ProductDetails() {
   const { id } = useParams();

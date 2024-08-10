@@ -2,6 +2,8 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import products from './data/products';
 import ProductItem from './ProductItem';
+import './styles/ProductList.css';
+
 
 function ProductList() {
   const { categoryName } = useParams();
