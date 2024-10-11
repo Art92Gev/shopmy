@@ -18,12 +18,22 @@ function ProductItem({ product }) {
     window.location.href = whatsappUrl;
   };
 
-  const sendToViber = () => {
-    const phoneNumber = '37477014137'; // Замените на нужный номер телефона.
-    const message = `Название: ${product.name}\nОписание: ${product.description}\nЦена: ${product.price} руб.\n${product.images[0].thumbnail}`;
-    const viberUrl = `viber://chat?number=%2B${phoneNumber}&text=${encodeURIComponent(message)}`;
-    window.location.href = viberUrl;
-  };
+	const sendToViber = () => {
+		const phoneNumber = '+37477014137'; // Убедитесь, что номер телефона в правильном формате.
+		const message = `Название: ${product.name}\nОписание: ${product.description}\nЦена: ${product.price} руб.\n${product.images[0].thumbnail}`;
+		
+		// Кодирование сообщения
+		const encodedMessage = encodeURIComponent(message);
+		
+		const viberUrl = `viber://chat?number=${phoneNumber}&text=${encodedMessage}`;
+		
+		// Проверка перед открытием
+		console.log('Viber URL:', viberUrl);
+		
+		// Открытие ссылки
+		window.location.href = viberUrl;
+	};
+	
 
   return (
     <div className="product-item">
