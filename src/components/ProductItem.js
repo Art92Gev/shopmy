@@ -4,7 +4,7 @@ import './styles/ProductItem.css';
 
 function ProductItem({ product }) {
   const sendToTelegram = () => {
-    const chatId = "Artur0192121"; // Замените на ваш идентификатор Telegram.
+    const chatId = "Artur0192121";
     const productUrl = `https://${window.location.hostname}/product/${product.id}`;
     const message = `Название: ${product.name}\nОписание: ${product.description}\nЦена: ${product.price} руб.\n ||${product.images[0].thumbnail}|| \n ${productUrl}`;
     const telegramUrl = `tg://resolve?domain=${chatId}&text=${encodeURIComponent(message)}`;
@@ -12,28 +12,19 @@ function ProductItem({ product }) {
   };
 
   const sendToWhatsApp = () => {
-    const phoneNumber = '37443996633'; // Замените на нужный номер телефона.
-    const message = `Название: ${product.name}\nОписание: ${product.description}\nЦена: ${product.price} руб.\n${product.images[0].thumbnail}`;
+    const phoneNumber = '37443996633'; // Замените на нужный номер телефона
+    const message = `Название: ${product.name}\nОписание: ${product.description}\nЦена: ${product.price} руб.`;
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.location.href = whatsappUrl;
   };
 
-	const sendToViber = () => {
-		const phoneNumber = '+37477014137'; // Убедитесь, что номер телефона в правильном формате.
-		const message = `Название: ${product.name}\nОписание: ${product.description}\nЦена: ${product.price} руб.\n${product.images[0].thumbnail}`;
-		
-		// Кодирование сообщения
-		const encodedMessage = encodeURIComponent(message);
-		
-		const viberUrl = `viber://chat?number=${phoneNumber}&text=${encodedMessage}`;
-		
-		// Проверка перед открытием
-		console.log('Viber URL:', viberUrl);
-		
-		// Открытие ссылки
-		window.location.href = viberUrl;
-	};
-	
+  const sendToMessenger = () => {
+    const pageId = 'artur.gevorkyan.921'; // Замените на ID вашей страницы Facebook
+    const message = `Название: ${product.name}\nОписание: ${product.description}\nЦена: ${product.price} руб.\n${product.images[0].thumbnail}`;
+    const encodedMessage = encodeURIComponent(message);
+    const messengerUrl = `https://m.me/${pageId}?text=${encodedMessage}`;
+    window.location.href = messengerUrl;
+  };
 
   return (
     <div className="product-item">
@@ -46,7 +37,7 @@ function ProductItem({ product }) {
       <p>{product.price} руб.</p>
       <button onClick={sendToTelegram}>Отправить в Telegram</button>
       <button onClick={sendToWhatsApp}>Отправить в WhatsApp</button>
-      <button onClick={sendToViber}>Отправить в Viber</button>
+      <button onClick={sendToMessenger}>Отправить в Messenger</button>
     </div>
   );
 }
