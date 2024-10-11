@@ -1,22 +1,26 @@
+
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './styles/ProductItem.css';
 
 function ProductItem({ product }) {
   const sendToTelegram = () => {
-    const chatId = "ROADPOLICEbot";
+    const chatId = "Artur0192121";
     const productUrl = `https://${window.location.hostname}/product/${product.id}`;
     const message = `Название: ${product.name}\nОписание: ${product.description}\nЦена: ${product.price} руб.\n ||${product.images[0].thumbnail}|| \n ${productUrl}`;
     const telegramUrl = `tg://resolve?domain=${chatId}&text=${encodeURIComponent(message)}`;
     window.location.href = telegramUrl;
   };
 
-  const sendToWhatsApp = () => {
-    const productUrl = `https://${window.location.hostname}/product/${product.id}`;
-    const message = `Название: ${product.name}\nОписание: ${product.description}\nЦена: ${product.price} руб.\n${productUrl}`;
-    const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
-  };
+	const sendToWhatsApp = () => {
+		const phoneNumber = '37443996633'; // Замените на нужный номер телефона
+		const productUrl = `https://${window.location.hostname}/product/${product.id}`;
+		const message = `Название: ${product.name}\nОписание: ${product.description}\nЦена: ${product.price} руб.\n ${product.images[0].thumbnail} \n ${productUrl}`;
+	
+		const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+		window.location.href = whatsappUrl;
+	};
 
   return (
     <div className="product-item">
