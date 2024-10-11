@@ -23,6 +23,8 @@ function ProductItem({ product }) {
     const message = `Название: ${product.name}\nОписание: ${product.description}\nЦена: ${product.price} руб.\n${product.images[0].thumbnail}`;
     const encodedMessage = encodeURIComponent(message);
     const messengerUrl = `https://m.me/${pageId}?text=${encodedMessage}`;
+    
+    console.log('Messenger URL:', messengerUrl); // Проверяем URL в консоли
     window.location.href = messengerUrl;
   };
 
