@@ -19,7 +19,7 @@ function ProductItem({ product }) {
   };
 
   const sendToViber = () => {
-    const phoneNumber = '37477014137'; // Замените на нужный номер телефона.
+    const phoneNumber = '+37443996633'; // Замените на нужный номер телефона.
     const message = `Название: ${product.name}\nОписание: ${product.description}\nЦена: ${product.price} руб.\n${product.images[0].thumbnail}`;
     const viberUrl = `viber://chat?number=%2B${phoneNumber}&text=${encodeURIComponent(message)}`;
     window.location.href = viberUrl;
