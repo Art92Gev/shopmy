@@ -1,6 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './styles/ProductItem.css';
+import { FaTelegram } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
+import { FaFacebookMessenger } from "react-icons/fa";
+
 
 function ProductItem({ product }) {
   const sendToTelegram = () => {
@@ -30,16 +34,20 @@ function ProductItem({ product }) {
 
   return (
     <div className="product-item">
-      <Link to={`/product/${product.id}`}>
+      <Link className='lin' to={`/product/${product.id}`}>
         <img src={product.images[0].thumbnail} alt={product.name} />
         <h2>{product.name}</h2>
       </Link>
+			<div className='product-infos'>
       <p>{product.description}</p>
       <p>Առկա ։ {product.qty}</p>
-      <p>{product.price} руб.</p>
-      <button onClick={sendToTelegram}>Отправить в Telegram</button>
-      <button onClick={sendToWhatsApp}>Отправить в WhatsApp</button>
-      <button onClick={sendToMessenger}>Отправить в Messenger</button>
+      <p>{product.price} AMD</p>
+			<div className='buy-button'>
+      <button onClick={sendToTelegram}><FaTelegram /></button>
+      <button onClick={sendToWhatsApp}><FaWhatsapp /></button>
+      <button onClick={sendToMessenger}><FaFacebookMessenger /></button>
+			</div>
+			</div>
     </div>
   );
 }

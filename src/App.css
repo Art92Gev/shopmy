@@ -5,7 +5,7 @@
 }
 
 body {
-  background: rgb(196, 204, 196);
+	background: linear-gradient(to bottom, white, silver);
 }
 
 .App {
