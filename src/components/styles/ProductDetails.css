@@ -28,8 +28,8 @@
 
 
 .buy-button button svg {
-	width: 33px;
-	height: 33px;
+	width: 23px;
+	height: 23px;
 }
 
 .back {
@@ -40,4 +40,9 @@
 .back svg {
 	width: 80px;
 	height: 30px;
+}
+
+.buy-button a svg {
+	width: 23px;
+	height: 23px;
 }
