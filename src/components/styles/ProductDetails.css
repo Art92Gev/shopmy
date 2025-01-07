@@ -46,3 +46,15 @@
 	width: 23px;
 	height: 23px;
 }
+
+
+@media (max-width: 450px) {
+  .buy-button a svg {
+		width: 15px;
+		height: 15px;
+	}
+	.buy-button button svg {
+		width: 15px;
+		height: 15px;
+	}
+}
