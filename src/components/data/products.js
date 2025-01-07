@@ -1,7 +1,7 @@
 const products = [
   {
     id: 1,
-    category: "Nissan Teana J31",
+    category: "Nissan Teana J311",
 		qty: '3',
     name: "Պատուհանների բլոկ",
     description: "",
