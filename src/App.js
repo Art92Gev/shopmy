@@ -4,6 +4,7 @@ import { Route, Routes, useNavigate } from 'react-router-dom';
 import CategoryList from './components/CategoryList';
 import ProductList from './components/ProductList';
 import ProductDetails from './components/ProductDetails';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   const navigate = useNavigate(); // Инициализация useNavigate
@@ -20,6 +21,7 @@ function App() {
         />
       </div>
       <h1 onClick={() => navigate('/')}></h1> {/* Передача функции в onClick */}
+			<ScrollToTop />
       <Routes>
         <Route path="/" element={<CategoryList />} />
         <Route path="/category/:categoryName" element={<ProductList />} />
