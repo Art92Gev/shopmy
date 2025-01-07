@@ -15,3 +15,20 @@ body {
   border: 1px solid;
   width: 100%;
 }
+
+.fill {
+	height:80vh;
+}
+
+.main-menu {
+	width: 100%;
+	background: #989898;
+	opacity: 0.8;
+}
+
+.main-menu img {
+	height: 160px; /* Фиксированная высота */
+  width: auto; 
+	opacity: 0.8;
+
+}
