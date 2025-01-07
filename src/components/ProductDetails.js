@@ -8,7 +8,7 @@ import { FaTelegram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaFacebookMessenger } from "react-icons/fa";
 import { IoReturnUpBackOutline } from "react-icons/io5";
-
+import { BsTelephoneOutbound } from "react-icons/bs";
 
 
 function ProductDetails() {
@@ -56,6 +56,7 @@ function ProductDetails() {
 					<p>Արժեք: {product.price} AMD</p>
 					<button className='back' onClick={goBack}><IoReturnUpBackOutline /></button>
 					<div className='buy-button'>
+						<a href="tel:+37443996633" className="call-button"><BsTelephoneOutbound /></a>
 						<button onClick={sendToTelegram}><FaTelegram /></button>
 						<button onClick={sendToWhatsApp}><FaWhatsapp /></button>
 						<button onClick={sendToMessenger}><FaFacebookMessenger /></button>
