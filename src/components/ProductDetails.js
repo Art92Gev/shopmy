@@ -17,7 +17,7 @@ function ProductDetails() {
 	const product = products.find(p => p.id === parseInt(id));
 
 	const goBack = () => {
-		navigate('/category/Nissan Teana J31');
+		navigate(-1);
 	};
 
 	const sendToTelegram = () => {

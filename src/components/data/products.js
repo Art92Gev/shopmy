@@ -4,10 +4,10 @@ const products = [
     category: "Nissan Teana J31",
 		qty: '3',
     name: "Պատուհանների բլոկ",
-    description: "hjj",
+    description: "",
     price: "8000",
     images: [
-      { original: "https://yerefan.ucoz.net/teana/processed_image_1.jpg", thumbnail: "https://yerefan.ucoz.net/teana/processed_image_1.jpg" },
+      { original: "https://yerefan.ucoz.net/teana/photo_1_2024-12-20_12-23-528.jpg", thumbnail: "https://yerefan.ucoz.net/teana/photo_1_2024-12-20_12-23-528.jpg" },
       // { original: "https://via.placeholder.com/600", thumbnail: "https://via.placeholder.com/150" }
     ]
   },
@@ -16,7 +16,7 @@ const products = [
 		qty: '4',
     category: "Nissan Teana J31",
     name: "Запчасть 2",
-    description: "ana J31",
+    description: "",
     price: "2000",
     images: [
       { original: "https://yerefan.ucoz.net/teana/processed_image_1.jpg", thumbnail: "https://yerefan.ucoz.net/teana/processed_image_1.jpg" },
@@ -26,8 +26,8 @@ const products = [
     id: 3,
 		qty: '4',
     category: "Nissan Teana J31",
-    name: "Запчасть 1",
-    description: "Փոխանցման տուփի բռնակ",
+    name: "Փոխանցման տուփի բռնակ",
+    description: "",
     price: "3000",
     images: [
       { original: "https://yerefan.ucoz.net/teana/processed_image_1.jpg", thumbnail: "https://yerefan.ucoz.net/teana/processed_image_1.jpg" },

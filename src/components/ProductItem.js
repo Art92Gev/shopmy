@@ -4,6 +4,7 @@ import './styles/ProductItem.css';
 import { FaTelegram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaFacebookMessenger } from "react-icons/fa";
+import { BsTelephoneOutbound } from "react-icons/bs";
 
 
 function ProductItem({ product }) {
@@ -43,6 +44,7 @@ function ProductItem({ product }) {
       <p>Առկա ։ {product.qty}</p>
       <p>{product.price} AMD</p>
 			<div className='buy-button'>
+      <a href="tel:+1234567890" className="call-button"><BsTelephoneOutbound /></a>
       <button onClick={sendToTelegram}><FaTelegram /></button>
       <button onClick={sendToWhatsApp}><FaWhatsapp /></button>
       <button onClick={sendToMessenger}><FaFacebookMessenger /></button>
