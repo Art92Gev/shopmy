@@ -3,16 +3,19 @@
   text-align: left;
   width: 60%;
   transform: translateY(100%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .category-list ul {
-  list-style: none;
-  font-size: 31px;
+	list-style: none;
+  font-size: 35px;
   padding-bottom: 30px;
 }
 
 .category-list li {
-  border: 1px solid;
+	border: 3px solid rgba(192, 192, 192, 0.644);
   margin: 10px;
   padding: 10px;
 }

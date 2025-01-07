@@ -30,14 +30,16 @@ function ProductDetails() {
 
 	const sendToWhatsApp = () => {
 		const phoneNumber = '37443996633'; // Замените на нужный номер телефона
-		const message = `Название: ${product.name}\nОписание: ${product.description}\nЦена: ${product.price} руб.`;
+		const productUrl = `https://${window.location.hostname}/product/${product.id}`;
+		const message = `Название: ${product.name}\nОписание: ${product.description}\nЦена: ${product.price} руб. || \n ${productUrl}`;
 		const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 		window.location.href = whatsappUrl;
 	};
 
 	const sendToMessenger = () => {
 		const pageId = 'artur.gevorkyan.921'; // Замените на ID вашей страницы Facebook
-		const message = `Название: ${product.name}\nОписание: ${product.description}\nЦена: ${product.price} руб.\n${product.images[0].thumbnail}`;
+		const productUrl = `https://${window.location.hostname}/product/${product.id}`;
+		const message = `Название: ${product.name}\nОписание: ${product.description}\nЦена: ${product.price} руб.\n${product.images[0].thumbnail} || \n ${productUrl}`;
 		const encodedMessage = encodeURIComponent(message);
 		const messengerUrl = `https://m.me/${pageId}?text=${encodedMessage}`;
 

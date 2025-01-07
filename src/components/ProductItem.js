@@ -42,7 +42,7 @@ function ProductItem({ product }) {
 			<div className='product-infos'>
       <p>{product.description}</p>
       <p>Առկա ։ {product.qty}</p>
-      <p>{product.price} AMD</p>
+      <p className='gin'>{product.price} AMD</p>
 			<div className='buy-button'>
       <a href="tel:+37443996633" className="call-button"><BsTelephoneOutbound /></a>
       <button onClick={sendToTelegram}><FaTelegram /></button>

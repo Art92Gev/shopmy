@@ -11,6 +11,7 @@
   width: 100%;
   text-align: center;
   margin-bottom: 20px;
+	color: black;
 }
 
 .product-list .product-item {
@@ -34,6 +35,22 @@
   align-items: center;
 }
 
+.category-block {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+}
+.category-block h2 {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 0 auto;
+}
 /* Медиазапросы для мобильных устройств */
 @media (max-width: 1360px) {
   .container {
