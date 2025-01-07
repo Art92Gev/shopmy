@@ -1,13 +1,13 @@
 const products = [
   {
     id: 1,
-    category: "Nissan Teana J311",
+    category: "Nissan Teana J31",
 		qty: '3',
     name: "Պատուհանների բլոկ",
-    description: "",
+    description: "hjj",
     price: "8000",
     images: [
-      { original: "https://yerefan.ucoz.net/teana/photo_1_2024-12-20_12-23-58.jpg", thumbnail: "https://yerefan.ucoz.net/teana/photo_1_2024-12-20_12-23-58.jpg" },
+      { original: "https://yerefan.ucoz.net/teana/processed_image_1.jpg", thumbnail: "https://yerefan.ucoz.net/teana/processed_image_1.jpg" },
       // { original: "https://via.placeholder.com/600", thumbnail: "https://via.placeholder.com/150" }
     ]
   },
@@ -19,7 +19,7 @@ const products = [
     description: "ana J31",
     price: "2000",
     images: [
-      { original: "https://yerefan.ucoz.net/10155656_1451614908406977_1964737074_n.jpg", thumbnail: "https://yerefan.ucoz.net/10155656_1451614908406977_1964737074_n.jpg" }
+      { original: "https://yerefan.ucoz.net/teana/processed_image_1.jpg", thumbnail: "https://yerefan.ucoz.net/teana/processed_image_1.jpg" },
     ]
   },
   {
