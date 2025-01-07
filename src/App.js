@@ -25,7 +25,7 @@ function App() {
         <Route path="/category/:categoryName" element={<ProductList />} />
         <Route path="/product/:id" element={<ProductDetails />} />
       </Routes>
-      <div className="fill"></div>
+      <div className="fill">---</div>
     </div>
   );
 }
