@@ -53,15 +53,23 @@ function ProductDetails() {
 				<>
 					<h2>{product.name}</h2>
 					<ImageGallery items={product.images} />
-					<p>{product.description}</p>
-					<p>Առկա ։ {product.qty}</p>
-					<p>Արժեք: {product.price} AMD</p>
 					<button className='back' onClick={goBack}><IoReturnUpBackOutline /></button>
-					<div className='buy-button'>
-						<a href="tel:+37443996633" className="call-button"><BsTelephoneOutbound /></a>
-						<button onClick={sendToTelegram}><FaTelegram /></button>
-						<button onClick={sendToWhatsApp}><FaWhatsapp /></button>
-						<button onClick={sendToMessenger}><FaFacebookMessenger /></button>
+					<div className='product-infos product-infos1'>
+						<p>{product.description}</p>
+						<p>Առկա ։ {product.qty}</p>
+						<div className='gin-blok' >
+							<div className='logogin'>
+								<img style={{ width: "50px",borderRadius:"10px" }} src="https://yerefan.ucoz.net/teana/465461994_8572360499514966_4772259612379822421_n.jpg" alt="" />
+								<p className='gin'> {product.priceLogo} AMD</p>
+							</div>
+							<p className='gin'>{product.price} AMD</p>
+						</div>
+						<div className='buy-button'>
+							<a href="tel:+37443996633" className="call-button"><BsTelephoneOutbound /></a>
+							<button onClick={sendToTelegram}><FaTelegram /></button>
+							<button onClick={sendToWhatsApp}><FaWhatsapp /></button>
+							<button onClick={sendToMessenger}><FaFacebookMessenger /></button>
+						</div>
 					</div>
 				</>
 			) : (
