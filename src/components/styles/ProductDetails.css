@@ -60,6 +60,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3577FF", en
 .back {
 	position: relative;
 	left:-40%;
+	bottom: 10px;
 }
 
 .back svg {
