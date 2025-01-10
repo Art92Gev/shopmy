@@ -228,7 +228,7 @@ const products = [
 
 export const categories = [
   { id: 1, name: "Nissan Teana J31" },
-  { id: 2, name: "Toyota Camry" }
+  // { id: 2, name: "Toyota Camry" }
 ];
 
 export default products;
