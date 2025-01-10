@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import ImageGallery from 'react-image-gallery';
-import "react-image-gallery/styles/css/image-gallery.css";
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
 import products from './data/products';
 import './styles/ProductDetails.css';
 import { FaTelegram } from "react-icons/fa";
@@ -72,7 +72,15 @@ function ProductDetails() {
             {product ? (
                 <>
                     <h2>{product.name}</h2>
-                    <ImageGallery items={product.images} />
+                    <div className="image-gallery">
+                        <Zoom>
+                            <img
+                                src={product.images[0].original}
+                                alt={product.name}
+                                style={{ width: '100%', borderRadius: '10px' }}
+                            />
+                        </Zoom>
+                    </div>
                     <button className='back' onClick={goBack}><IoReturnUpBackOutline /></button>
                     <div className='product-infos product-infos1'>
                         <p>{product.description}</p>
