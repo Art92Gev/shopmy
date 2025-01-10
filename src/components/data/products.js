@@ -160,7 +160,7 @@ const products = [
     ]
   },
 	{
-    id: 15,
+    id: 13,
     category: "Nissan Teana J31",
 		qty: '2x4',
     name: "Շթերի նիկելներ ՆՈՐ",
@@ -173,7 +173,7 @@ const products = [
     ]
   },
 	{
-    id: 13,
+    id: 14,
     category: "Nissan Teana J31",
 		qty: '4',
     name: "BT-AUX կառավարում Մուլտիղեկ",
@@ -186,7 +186,7 @@ const products = [
     ]
   },
 	{
-    id: 14,
+    id: 15,
     category: "Nissan Teana J31",
 		qty: '10',
     name: "Պաշտպանիչ տիպեր",
@@ -228,7 +228,7 @@ const products = [
 
 export const categories = [
   { id: 1, name: "Nissan Teana J31" },
-  // { id: 2, name: "Toyota Camry" }
+  { id: 2, name: "Toyota Camry" }
 ];
 
 export default products;
