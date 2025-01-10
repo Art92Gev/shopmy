@@ -16,7 +16,7 @@ const products = [
     id: 2,
     category: "Nissan Teana J31",
 		qty: '2',
-    name: "Փոխանցման տուփի բռնակ",
+    name: "Փոխանցման տուփի բռնակ փայտ",
     description: "",
     price: "9000",
 		priceLogo: "8000",
@@ -148,7 +148,7 @@ const products = [
     id: 12,
     category: "Nissan Teana J31",
 		qty: '2x4',
-    name: "Մոլդինգներ",
+    name: "Մոլդինգներ ՆՈՐ",
     description: "",
 		price: "25000",
 		priceLogo: "20000",
@@ -157,6 +157,19 @@ const products = [
       { original: "https://yerefan.ucoz.net/teana/12-10-.jpg", thumbnail: "https://yerefan.ucoz.net/teana/12-10-.jpg" },
       { original: "https://yerefan.ucoz.net/teana/12-12-.jpg", thumbnail: "https://yerefan.ucoz.net/teana/12-12-.jpg" },
       { original: "https://yerefan.ucoz.net/teana/12-8-.jpg", thumbnail: "https://yerefan.ucoz.net/teana/12-8-.jpg" },
+    ]
+  },
+	{
+    id: 15,
+    category: "Nissan Teana J31",
+		qty: '2x4',
+    name: "Շթերի նիկելներ ՆՈՐ",
+    description: "",
+		price: "8000",
+		priceLogo: "7000",
+    images: [
+      { original: "https://yerefan.ucoz.net/teana/12-5-.jpg", thumbnail: "https://yerefan.ucoz.net/teana/12-5-.jpg" },
+      // { origina3l: "https://via.placeholder.com/600", thumbnail: "https://via.placeholder.com/150" }
     ]
   },
 	{
@@ -169,6 +182,45 @@ const products = [
 		priceLogo: "4500",
     images: [
       { original: "https://yerefan.ucoz.net/teana/12-3-.jpg", thumbnail: "https://yerefan.ucoz.net/teana/12-3-.jpg" },
+      // { origina3l: "https://via.placeholder.com/600", thumbnail: "https://via.placeholder.com/150" }
+    ]
+  },
+	{
+    id: 14,
+    category: "Nissan Teana J31",
+		qty: '10',
+    name: "Պաշտպանիչ տիպեր",
+    description: "",
+		price: "4000",
+		priceLogo: "3000",
+    images: [
+      { original: "https://yerefan.ucoz.net/teana/12-4-.jpg", thumbnail: "https://yerefan.ucoz.net/teana/12-4-.jpg" },
+      // { origina3l: "https://via.placeholder.com/600", thumbnail: "https://via.placeholder.com/150" }
+    ]
+  },
+	{
+    id: 16,
+    category: "Nissan Teana J31",
+		qty: '10',
+    name: "Դռների ռետիններ",
+    description: "",
+		price: "9000",
+		priceLogo: "8000",
+    images: [
+      { original: "https://yerefan.ucoz.net/teana/12-7-.jpg", thumbnail: "https://yerefan.ucoz.net/teana/12-7-.jpg" },
+      // { origina3l: "https://via.placeholder.com/600", thumbnail: "https://via.placeholder.com/150" }
+    ]
+  },
+	{
+    id: 17,
+    category: "Nissan Teana J31",
+		qty: '1',
+    name: "Դիմացի շթի սալյասկեք",
+    description: "",
+		price: "5000",
+		priceLogo: "4000",
+    images: [
+      { original: "https://yerefan.ucoz.net/teana/12-6-.jpg", thumbnail: "https://yerefan.ucoz.net/teana/12-6-.jpg" },
       // { origina3l: "https://via.placeholder.com/600", thumbnail: "https://via.placeholder.com/150" }
     ]
   },
