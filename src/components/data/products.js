@@ -8,7 +8,7 @@ const products = [
     price: "9000",    
 		priceLogo: "8000",
     images: [
-      { original: "https://yerefan.ucoz.net/teana/photo_1_2024-12-20_12-23-528.jpg", thumbnail: "https://yerefan.ucoz.net/teana/photo_1_2024-12-20_12-23-528.jpg" },
+      { original: "https://yerefan.ucoz.net/teana/1-1-.jpg", thumbnail: "https://yerefan.ucoz.net/teana/1-1-.jpg" },
       // { original: "https://via.placeholder.com/600", thumbnail: "https://via.placeholder.com/150" }
     ]
   },
