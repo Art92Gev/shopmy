@@ -92,3 +92,31 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3577FF", en
 
 
 
+.image-gallery {
+    position: relative;
+    display: inline-block;
+    cursor: zoom-in;
+}
+.hover-text{
+	position: relative;
+	top: 20px;
+	z-index: 1;
+	font-size: 20px;
+}
+.image-gallery .hover-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.image-gallery:hover .hover-text {
+    opacity: 0;
+}
