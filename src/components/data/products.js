@@ -49,7 +49,6 @@ const products = [
     images: [
       { original: "https://yerefan.ucoz.net/teana/1-3-.jpg", thumbnail: "https://yerefan.ucoz.net/teana/1-3-.jpg" },
       { original: "https://yerefan.ucoz.net/teana/1-4-.jpg", thumbnail: "https://yerefan.ucoz.net/teana/1-4-.jpg" },
-      // { original: "https://via.placeholder.com/600", thumbnail: "https://via.placeholder.com/150" }
     ]
   },
 	{
