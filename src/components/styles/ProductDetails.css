@@ -75,11 +75,11 @@
 
 /* Галерея изображений */
 .image-gallery {
-  position: relative;
-  width: 100%;
-  max-width: 600px;
-  margin: auto;
-  text-align: center;
+	position: relative;
+	width: 100%;
+	max-width: 600px;
+	margin: auto;
+	text-align: center;
 }
 
 .image-gallery .hover-text {
@@ -102,21 +102,23 @@
 
 /* Слайдер */
 .slider {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  height: 600px;
-	/* width: 600px; */
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 600px; /* Убедитесь, что высота установлена */
+	overflow: hidden; /* Скрыть переполнение, если нужно */
 }
-
 .slider-image {
-  width: 100%;
-  border-radius: 10px;
-  transition: opacity 0.5s ease-in-out;
-  opacity: 1;
-  position: absolute;
+	width: 100%;
+	height: auto; /* Добавлено для правильного отображения высоты изображения */
+	border-radius: 10px;
+	transition: opacity 0.5s ease-in-out;
+	opacity: 1;
+	position: absolute;
+	top: 50%; /* Центрирование по вертикали */
+	left: 50%; /* Центрирование по горизонтали */
+	transform: translate(-50%, -50%); /* Центрирование по обоим осям */
 }
 
 .slider-image.hidden {

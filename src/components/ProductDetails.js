@@ -85,33 +85,32 @@ function ProductDetails() {
 	
 		return (
 			<div className="product-details">
-      {product ? (
-        <>
-          <h2>{product.name}</h2>
-          <div className="image-gallery">
-            <div className="slider">
-              {product.images.length > 1 && ( // Показываем стрелки, если больше одной фотографии
-                <button className="prev-btn" onClick={prevImage}>
-                  &#8249;
-                </button>
-              )}
-              {product.images.map((image, index) => (
-                <img
-                  key={index}
-                  src={image.original}
-                  alt={`${product.name} - ${index + 1}`}
-                  className={`slider-image ${
-                    index === currentImageIndex ? '' : 'hidden'
-                  }`}
-                />
-              ))}
-              {product.images.length > 1 && ( // Показываем стрелки, если больше одной фотографии
-                <button className="next-btn" onClick={nextImage}>
-                  &#8250;
-                </button>
-              )}
-            </div>
-          </div>
+            {product ? (
+                <>
+                    <h2>{product.name}</h2>
+                    <div className="image-gallery">
+                        <div className="slider">
+                            {product.images.length > 1 && (
+                                <button className="prev-btn" onClick={prevImage}>
+                                    &#8249;
+                                </button>
+                            )}
+                            {product.images.map((image, index) => (
+                                <Zoom key={index}>
+                                    <img
+                                        src={image.original}
+                                        alt={`${product.name} - ${index + 1}`}
+                                        className={`slider-image ${index === currentImageIndex ? '' : 'hidden'}`}
+                                    />
+                                </Zoom>
+                            ))}
+                            {product.images.length > 1 && (
+                                <button className="next-btn" onClick={nextImage}>
+                                    &#8250;
+                                </button>
+                            )}
+                        </div>
+                    </div>
 
           {/* Миниатюры */}
           {product.images.length > 1 && ( // Показываем миниатюры, если больше одной фотографии
