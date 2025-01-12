@@ -192,3 +192,7 @@
   z-index: 1;
   font-size: 20px;
 }
+[data-rmiz-modal-overlay] {
+	background-color: rgba(0, 0, 0, 0.8) !important; /* Темный фон с прозрачностью */
+	transition: 3s ease-in-out;   /* Плавный переход */
+}
