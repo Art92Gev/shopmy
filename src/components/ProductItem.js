@@ -38,14 +38,14 @@ function ProductItem({ product }) {
 			<Link className='lin' to={`/product/${product.id}`}>
 				<img src={product.images[0].thumbnail} alt={product.name} />
 			</Link>
-				<h2>{product.name}</h2>
+			<h2>{product.name}</h2>
 			<div className='product-infos'>
 				<p>{product.description}</p>
 				<p>Առկա ։ {product.qty}</p>
 				<div className='gin-blok' >
 					<div className='logogin'>
-					<img style={{ width: "50px" }} src="https://yerefan.ucoz.net/teana/465461994_8572360499514966_4772259612379822421_n.jpg" alt="" />
-					<p className='gin-logo'> {product.priceLogo} AMD</p>
+						<img style={{ width: "50px" }} src="https://yerefan.ucoz.net/teana/465461994_8572360499514966_4772259612379822421_n.jpg" alt="" />
+						<p className='gin-logo'> {product.priceLogo} AMD</p>
 					</div>
 					<p className='gin'>{product.price} AMD</p>
 				</div>
