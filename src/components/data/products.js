@@ -67,7 +67,7 @@ const products = [
   },  {
     id: 6,
     category: "Nissan Teana J31",
-		qty: '9',
+		qty: '8',
     name: "Բանալի պատյան",
     description: "",
     price: "4000",
@@ -107,7 +107,7 @@ const products = [
 	{
     id: 9,
     category: "Nissan Teana J31",
-		qty: '10',
+		qty: '9',
     name: "Պզիկ ֆարսունկա Նոր",
     description: "",
 		price: "4000",
