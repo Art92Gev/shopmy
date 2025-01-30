@@ -197,19 +197,19 @@ const products = [
       // { origina3l: "https://via.placeholder.com/600", thumbnail: "https://via.placeholder.com/150" }
     ]
   },
-	{
-    id: 16,
-    category: "Nissan Teana J31",
-		qty: '10',
-    name: "Դռների ռետիններ",
-    description: "",
-		price: "9000",
-		priceLogo: "8000",
-    images: [
-      { original: "https://yerefan.ucoz.net/teana/12-7-.jpg", thumbnail: "https://yerefan.ucoz.net/teana/12-7-.jpg" },
-      // { origina3l: "https://via.placeholder.com/600", thumbnail: "https://via.placeholder.com/150" }
-    ]
-  },
+	// {
+  //   id: 16,
+  //   category: "Nissan Teana J31",
+	// 	qty: '10',
+  //   name: "Դռների ռետիններ",
+  //   description: "",
+	// 	price: "9000",
+	// 	priceLogo: "8000",
+  //   images: [
+  //     { original: "https://yerefan.ucoz.net/teana/12-7-.jpg", thumbnail: "https://yerefan.ucoz.net/teana/12-7-.jpg" },
+  //     // { origina3l: "https://via.placeholder.com/600", thumbnail: "https://via.placeholder.com/150" }
+  //   ]
+  // },
 	{
     id: 17,
     category: "Nissan Teana J31",
