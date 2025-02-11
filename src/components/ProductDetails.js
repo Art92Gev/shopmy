@@ -19,7 +19,7 @@ function ProductDetails() {
     const sendToTelegram = () => {
         const chatId = "Artur0192121";
         const productUrl = `https://${window.location.hostname}/product/${product.id}`;
-        const message = `Название: ${product.name}\nОписание: ${product.description}\nЦена: ${product.price} руб.\n ||${product.images[0].thumbnail}|| \n ${productUrl}`;
+        const message = `Название: ${product.name}\nОписание: ${product.description}\nЦена: ${product.price} դրամ.\n ||${product.images[0].thumbnail}|| \n ${productUrl}`;
         const telegramUrl = `https://t.me/${chatId}?text=${encodeURIComponent(message)}`;
         window.location.href = telegramUrl;
     };
@@ -27,7 +27,7 @@ function ProductDetails() {
     const sendToWhatsApp = () => {
         const phoneNumber = '37443996633'; // Замените на нужный номер телефона
         const productUrl = `https://${window.location.hostname}/product/${product.id}`;
-        const message = `Название: ${product.name}\nОписание: ${product.description}\nЦена: ${product.price} руб. || \n ${productUrl}`;
+        const message = `Название: ${product.name}\nОписание: ${product.description}\nЦена: ${product.price} դրամ. || \n ${productUrl}`;
         const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
         window.location.href = whatsappUrl;
     };
@@ -35,7 +35,7 @@ function ProductDetails() {
     const sendToMessenger = () => {
         const pageId = 'artur.gevorkyan.921'; // Замените на ID вашей страницы Facebook
         const productUrl = `https://${window.location.hostname}/product/${product.id}`;
-        const message = `Название: ${product.name}\nОписание: ${product.description}\nЦена: ${product.price} руб.\n${product.images[0].thumbnail} || \n ${productUrl}`;
+        const message = `Название: ${product.name}\nОписание: ${product.description}\nЦена: ${product.price} դրամ.\n${product.images[0].thumbnail} || \n ${productUrl}`;
         const encodedMessage = encodeURIComponent(message);
         const messengerUrl = `https://m.me/${pageId}?ref=${encodedMessage}`;
         window.location.href = messengerUrl;
