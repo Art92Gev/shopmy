@@ -2,7 +2,7 @@ const products = [
   {
     id: 1,
     category: "Nissan Teana J31",
-		qty: '2',
+		qty: '1',
     name: "Պատուհանների բլոկ",
     description: "",
     price: "9000",    
@@ -54,7 +54,7 @@ const products = [
 	{
     id: 5,
     category: "Nissan Teana J31",
-		qty: '6',
+		qty: '5',
     name: "Տորպեդոյի խալի",
     description: "",
     price: "8000",
@@ -94,7 +94,7 @@ const products = [
 	{
     id: 8,
     category: "Nissan Teana J31",
-		qty: '9',
+		qty: '8',
     name: "Կալպակ նոր",
     description: "",
     price: "5000",
@@ -146,7 +146,7 @@ const products = [
 	{
     id: 12,
     category: "Nissan Teana J31",
-		qty: '2x4',
+		qty: '1',
     name: "Մոլդինգներ ՆՈՐ կոմպլեկտ",
     description: "",
 		price: "25000",
@@ -161,7 +161,7 @@ const products = [
 	{
     id: 13,
     category: "Nissan Teana J31",
-		qty: '2x4',
+		qty: '4',
     name: "Շթերի նիկելներ ՆՈՐ",
     description: "",
 		price: "9000",
