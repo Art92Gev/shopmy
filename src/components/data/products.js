@@ -133,7 +133,7 @@ const products = [
 	{
     id: 11,
     category: "Nissan Teana J31",
-		qty: '12',
+		qty: '11',
     name: "Կոճի շտեկեռ",
     description: "",
 		price: "2000",
@@ -147,7 +147,7 @@ const products = [
     id: 12,
     category: "Nissan Teana J31",
 		qty: '2x4',
-    name: "Մոլդինգներ ՆՈՐ",
+    name: "Մոլդինգներ ՆՈՐ կոմպլեկտ",
     description: "",
 		price: "25000",
 		priceLogo: "20000",
@@ -164,8 +164,8 @@ const products = [
 		qty: '2x4',
     name: "Շթերի նիկելներ ՆՈՐ",
     description: "",
-		price: "8000",
-		priceLogo: "7000",
+		price: "9000",
+		priceLogo: "8000",
     images: [
       { original: "https://yerefan.ucoz.net/teana/12-5-.jpg", thumbnail: "https://yerefan.ucoz.net/teana/12-5-.jpg" },
       // { origina3l: "https://via.placeholder.com/600", thumbnail: "https://via.placeholder.com/150" }
