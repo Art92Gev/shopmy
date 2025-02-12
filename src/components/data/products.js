@@ -94,7 +94,7 @@ const products = [
 	{
     id: 8,
     category: "Nissan Teana J31",
-		qty: '8',
+		qty: '5',
     name: "Կալպակ նոր 1հ",
     description: "",
     price: "5000",
