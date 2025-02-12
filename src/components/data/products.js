@@ -146,8 +146,8 @@ const products = [
 	{
     id: 12,
     category: "Nissan Teana J31",
-		qty: '1x4',
-    name: "Մոլդինգներ ՆՈՐ կոմպլեկտ",
+		qty: '1 կոմպլեկտ',
+    name: "Մոլդինգներ ՆՈՐ ",
     description: "",
 		price: "25000",
 		priceLogo: "20000",
@@ -161,8 +161,8 @@ const products = [
 	{
     id: 13,
     category: "Nissan Teana J31",
-		qty: '2x4',
-    name: "Շթերի նիկելներ ՆՈՐ",
+		qty: '4 կոմպլեկտ',
+    name: "Շթերի նիկելներ ՆՈՐ 1 հատի գին",
     description: "",
 		price: "9000",
 		priceLogo: "8000",
