@@ -180,7 +180,7 @@ const products = [
 		price: "5000",
 		priceLogo: "4500",
     images: [
-      { origina3l: "https://yerefan.ucoz.net/teana/photo_2025-02-12_18-28-26.jpg", thumbnail: "https://yerefan.ucoz.net/teana/photo_2025-02-12_18-28-26.jpg" },
+      { original: "https://yerefan.ucoz.net/teana/photo_2025-02-12_18-28-26.jpg", thumbnail: "https://yerefan.ucoz.net/teana/photo_2025-02-12_18-28-26.jpg" },
       { original: "https://yerefan.ucoz.net/teana/12-3-.jpg", thumbnail: "https://yerefan.ucoz.net/teana/12-3-.jpg" }
     ]
   },
