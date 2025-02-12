@@ -127,7 +127,7 @@ const products = [
 		priceLogo: "10000",
     images: [
       { original: "https://yerefan.ucoz.net/teana/78b04c42b04e23921479d6490731db19.jpg", thumbnail: "https://yerefan.ucoz.net/teana/78b04c42b04e23921479d6490731db19.jpg" },
-      // { origina3l: "https://via.placeholder.com/600", thumbnail: "https://via.placeholder.com/150" }
+      // { original: "https://via.placeholder.com/600", thumbnail: "https://via.placeholder.com/150" }
     ]
   },
 	{
@@ -140,7 +140,7 @@ const products = [
 		priceLogo: "1500",
     images: [
       { original: "https://yerefan.ucoz.net/teana/12-1-1.jpg", thumbnail: "https://yerefan.ucoz.net/teana/12-1-1.jpg" },
-      // { origina3l: "https://via.placeholder.com/600", thumbnail: "https://via.placeholder.com/150" }
+      // { original: "https://via.placeholder.com/600", thumbnail: "https://via.placeholder.com/150" }
     ]
   },
 	{
@@ -168,7 +168,7 @@ const products = [
 		priceLogo: "8000",
     images: [
       { original: "https://yerefan.ucoz.net/teana/12-5-.jpg", thumbnail: "https://yerefan.ucoz.net/teana/12-5-.jpg" },
-      // { origina3l: "https://via.placeholder.com/600", thumbnail: "https://via.placeholder.com/150" }
+      // { original: "https://via.placeholder.com/600", thumbnail: "https://via.placeholder.com/150" }
     ]
   },
 	{
@@ -194,7 +194,7 @@ const products = [
 		priceLogo: "3000",
     images: [
       { original: "https://yerefan.ucoz.net/teana/12-4-.jpg", thumbnail: "https://yerefan.ucoz.net/teana/12-4-.jpg" },
-      // { origina3l: "https://via.placeholder.com/600", thumbnail: "https://via.placeholder.com/150" }
+      // { original: "https://via.placeholder.com/600", thumbnail: "https://via.placeholder.com/150" }
     ]
   },
 	{
@@ -207,7 +207,7 @@ const products = [
 		priceLogo: "9000",
     images: [
       { original: "https://yerefan.ucoz.net/teana/12-7-.jpg", thumbnail: "https://yerefan.ucoz.net/teana/12-7-.jpg" },
-      // { origina3l: "https://via.placeholder.com/600", thumbnail: "https://via.placeholder.com/150" }
+      // { original: "https://via.placeholder.com/600", thumbnail: "https://via.placeholder.com/150" }
     ]
   },
 	{
@@ -220,7 +220,7 @@ const products = [
 		priceLogo: "4000",
     images: [
       { original: "https://yerefan.ucoz.net/teana/12-6-.jpg", thumbnail: "https://yerefan.ucoz.net/teana/12-6-.jpg" },
-      // { origina3l: "https://via.placeholder.com/600", thumbnail: "https://via.placeholder.com/150" }
+      // { original: "https://via.placeholder.com/600", thumbnail: "https://via.placeholder.com/150" }
     ]
   },
 	];
