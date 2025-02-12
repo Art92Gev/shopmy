@@ -175,3 +175,14 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3577FF", en
 		color: #821c0a;
   }
 }
+/* ProductItem.css */
+.out-of-stock {
+	opacity: 0.2; /* Уменьшаем прозрачность для товаров, которых нет в наличии */
+}
+
+.out-of-stock-message {
+	color: red;
+	font-weight: bold;
+	margin-top: 10px;
+	opacity: 1;
+}

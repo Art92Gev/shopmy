@@ -58,11 +58,3 @@
 	}
 }
 
-.product-item.out-of-stock {
-	opacity: 0.2; /* Делаем товар полупрозрачным */
-	pointer-events: none; /* Отключаем клики по товару */
-}
-
-.product-item.out-of-stock .buy-button {
-	display: none; /* Скрываем кнопки покупки */
-}
