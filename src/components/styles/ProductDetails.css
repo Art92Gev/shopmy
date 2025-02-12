@@ -1,79 +1,76 @@
-/* Общие стили для .product-details */
 .product-details {
-  padding: 20px;
-  text-align: center;
-  max-width: 800px;
-  margin: auto;
+	padding: 20px;
+	text-align: center;
+	max-width: 800px;
+	margin: auto;
 }
 
 .product-details h2 {
-  margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
-/* Стили для кнопок */
 .buy-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	padding: 10px;
+	/* gap: 10px; */
 }
 
 .buy-button button {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  color: white;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .buy-button button:nth-child(1) {
-  background-color: #0088cc;
+	background-color: #0088cc;
 }
 
 .buy-button button:nth-child(2) {
-  background-color: #25A2E0;
-  border-radius: 50%;
+	background-color: #25A2E0;
+	border-radius: 50%;
 }
 
 .buy-button button:nth-child(3) {
-  background-color: #25D366;
+	background-color: #25D366;
 }
 
 .buy-button button:nth-child(4) {
-  border-radius: 50%;
-  background: linear-gradient(45deg, hsla(220, 100%, 60%, 1) 0%, hsla(343, 98%, 65%, 1) 67%);
+	border-radius: 50%;
+	background: linear-gradient(45deg, hsla(220, 100%, 60%, 1) 0%, hsla(343, 98%, 65%, 1) 67%);
 }
 
 .buy-button button svg {
-  width: 23px;
-  height: 23px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	width: 23px;
+	height: 23px;
 }
 
 .back {
-  position: relative;
-  left: -40%;
-  bottom: 10px;
-  margin: 20px;
+	position: relative;
+	left: -40%;
+	bottom: 10px;
+	margin: 20px;
 }
 
 .back svg {
-  width: 80px;
-  height: 30px;
+	width: 80px;
+	height: 30px;
 }
 
-/* Адаптивность для иконок кнопок */
 @media (max-width: 450px) {
-  .buy-button a svg, .buy-button button svg {
-    width: 15px;
-    height: 15px;
-  }
+	.buy-button a svg, .buy-button button svg {
+			width: 15px;
+			height: 15px;
+	}
 }
 
-/* Галерея изображений */
 .image-gallery {
 	position: relative;
 	width: 100%;
@@ -82,33 +79,15 @@
 	text-align: center;
 }
 
-.image-gallery .hover-text {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 14px;
-  opacity: 1;
-  transition: opacity 0.3s ease;
-}
-
-.image-gallery:hover .hover-text {
-  opacity: 0;
-}
-
-/* Слайдер */
 .slider {
 	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 400px;
-	overflow: hidden; /* Скрыть переполнение, если нужно */
+	overflow: hidden;
 }
+
 .slider-image {
 	width: 100%;
 	height: 425px;
@@ -116,83 +95,70 @@
 	transition: opacity 0.5s ease-in-out;
 	opacity: 1;
 	position: absolute;
-	top: 50%; /* Центрирование по вертикали */
-	left: 50%; /* Центрирование по горизонтали */
-	transform: translate(-50%, -50%); /* Центрирование по обоим осям */
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
-.slider-image.hidden {
-  opacity: 0;
-}
-
-/* Кнопки переключения слайдера */
 .prev-btn, .next-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: 20px;
-  z-index: 10;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	border: none;
+	padding: 10px;
+	border-radius: 50%;
+	cursor: pointer;
+	font-size: 20px;
+	z-index: 10;
 }
 
 .prev-btn {
-  left: 10px;
+	left: 10px;
 }
 
 .next-btn {
-  right: 10px;
+	right: 10px;
 }
 
 .prev-btn:hover, .next-btn:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  transform: translateY(-50%) scale(1.1);
-  transition: transform 0.2s ease-in-out;
+	background-color: rgba(0, 0, 0, 0.8);
+	transform: translateY(-50%) scale(1.1);
+	transition: transform 0.2s ease-in-out;
 }
 
-/* Миниатюры для слайдера */
 .thumbnail-container {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 10px;
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	margin-top: 10px;
 }
 
 .thumbnail {
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
-  border: 2px solid transparent;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: transform 0.2s ease, border-color 0.2s ease;
+	width: 60px;
+	height: 60px;
+	object-fit: cover;
+	border: 2px solid transparent;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
 .thumbnail.active {
-  border-color: #007bff;
-  transform: scale(1.1);
+	border-color: #007bff;
+	transform: scale(1.1);
 }
 
 .thumbnail:hover {
-  transform: scale(1.1);
+	transform: scale(1.1);
 }
 
-/* Общие стили для .product-infos1 */
 .product-infos1 {
-  width: 100%;
+	width: 100%;
 }
 
-.hover-text {
-  position: relative;
-  top: 20px;
-  z-index: 1;
-  font-size: 20px;
-}
 [data-rmiz-modal-overlay] {
-	background-color: rgba(0, 0, 0, 0.8) !important; /* Темный фон с прозрачностью */
-	transition: 3s ease-in-out;   /* Плавный переход */
+	background-color: rgba(0, 0, 0, 0.8) !important;
+	transition: 3s ease-in-out;
 }

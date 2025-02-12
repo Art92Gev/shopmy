@@ -1,32 +1,33 @@
 .category-list {
-  margin: 0px auto;
-  text-align: left;
-  width: 60%;
-  transform: translateY(100%);
+	margin: 0 auto;
+	text-align: left;
+	width: 60%;
+	transform: translateY(100%);
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 }
 
 .category-list ul {
 	list-style: none;
-  font-size: 35px;
-  padding-bottom: 30px;
+	font-size: 35px;
+	padding-bottom: 30px;
 }
 
 .category-list li {
 	border: 3px solid rgba(192, 192, 192, 0.644);
-  margin: 10px;
-  padding: 10px;
+	margin: 10px;
+	padding: 10px;
 }
 
 .category-list li:hover {
-  background: silver;
+	background: silver;
 }
 
 .category-list a {
-  color: black;
+	color: black;
 	width: 100%;
 	height: 100%;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

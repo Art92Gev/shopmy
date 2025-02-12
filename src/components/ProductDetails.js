@@ -8,7 +8,7 @@ import './styles/ProductDetails.css';
 import { FaTelegram, FaWhatsapp, FaFacebookMessenger } from "react-icons/fa";
 import { BsTelephoneOutbound } from "react-icons/bs";
 import { sendToTelegram, sendToWhatsApp, sendToMessenger } from '../components/utils/messaging';
-import BackButton from './BackButton';
+import BackButton from '../components/utils/BackButton';
 
 function ProductDetails() {
 	const { id } = useParams();

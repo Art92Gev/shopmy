@@ -1,35 +1,31 @@
-// ProductList.js
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import products from './data/products';
 import ProductItem from './ProductItem';
 import './styles/ProductList.css';
-import { IoReturnUpBackOutline } from "react-icons/io5";
-import { useNavigate } from 'react-router-dom';
+import BackButton from '../components/utils/BackButton';
 
-function ProductList() {
+function ProductList() {  
     const { categoryName } = useParams();
-    const navigate = useNavigate();
 
     // Фильтрация товаров по категории
     const filteredProducts = products.filter(product => product.category === categoryName);
 
-    // Сортировка: товары с qty === '0' перемещаются в конец
-    const sortedProducts = filteredProducts.sort((a, b) => {
-        if (a.qty === '0' && b.qty !== '0') return 1; // a нет в наличии, b есть — a идет после b
-        if (a.qty !== '0' && b.qty === '0') return -1; // a есть в наличии, b нет — a идет перед b
-        return 0; // иначе порядок не меняется
-    });
+    // Разделяем товары на два массива: в наличии и нет в наличии
+    const availableProducts = filteredProducts.filter(product => product.qty !== '0');
+    const outOfStockProducts = filteredProducts.filter(product => product.qty === '0');
 
-    const goBack = () => {
-        navigate(-1);
-    };
+    // Перемешиваем товары в наличии
+    const shuffledAvailableProducts = [...availableProducts].sort(() => Math.random() - 0.5);
+
+    // Объединяем: сначала перемешанные товары, потом отсутствующие
+    const sortedProducts = [...shuffledAvailableProducts, ...outOfStockProducts];
 
     return (
         <div className="product-list">
             <div className='container'>
                 <div className='category-block'>
-                    <button className='back' onClick={goBack}><IoReturnUpBackOutline /></button>
+                    <BackButton />
                     <h2>{categoryName}</h2>
                 </div>
                 <div className="product-grid">

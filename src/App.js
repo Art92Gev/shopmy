@@ -4,7 +4,7 @@ import { Route, Routes, useNavigate } from 'react-router-dom';
 import CategoryList from './components/CategoryList';
 import ProductList from './components/ProductList';
 import ProductDetails from './components/ProductDetails';
-import ScrollToTop from './components/ScrollToTop';
+import ScrollToTop from './components/utils/ScrollToTop';
 
 function App() {
   const navigate = useNavigate(); // Инициализация useNavigate
