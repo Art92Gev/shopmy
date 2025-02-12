@@ -28,7 +28,7 @@
 	box-shadow: 3px  3px 15px 7px rgba(58, 59, 58, 0.423);
 	filter:brightness(90%);
 }
-.logogin img {
+.logoContainer img {
 	box-shadow: 3px  3px 24px 13px rgba(58, 59, 58, 0.423);
 	animation: pulse 1.5s infinite; /* Применяет анимацию с бесконечным повторением */
 
@@ -120,7 +120,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3577FF", en
 	gap: 3px;
 }
 
-.gin {
+.priceWithLogo {
 	font-size: 20px;
 	color: #821c0a;
 	font-weight: bolder;
@@ -150,7 +150,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3577FF", en
 /* Media query */
 @media (min-width: 300px) {}
 
-.logogin {
+.logoContainer {
   display: flex;
   justify-content: center;
   align-items: center;
