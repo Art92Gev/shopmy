@@ -18,7 +18,7 @@ export const sendToMessenger = (product, pageId = 'artur.gevorkyan.921') => {
 
   // Копирование в буфер обмена
   navigator.clipboard.writeText(message).then(() => {
-    alert('Сообщение скопировано в буфер обмена! Через 1.5 секунды откроется Messenger...');
+    alert('Товар скопирован!Просто вставьте в чат в мессенджере. Нажмите ОК');
     
     // Ждём 1.5 секунды перед переходом
     setTimeout(() => {
