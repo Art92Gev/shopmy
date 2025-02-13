@@ -67,7 +67,7 @@ const products = [
   },  {
     id: 6,
     category: "Nissan Teana J31",
-		qty: '8',
+		qty: '7',
     name: "Բանալի պատյան",
     description: "",
     price: "4000",
