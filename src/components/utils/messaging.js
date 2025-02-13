@@ -23,7 +23,7 @@ export const sendToMessenger = (product, pageId = 'artur.gevorkyan.921') => {
     // Ждём 1.5 секунды перед переходом
     setTimeout(() => {
       window.location.href = `https://m.me/${pageId}`;
-    }, 1500);
+    }, 500);
   }).catch(() => {
     alert('Не удалось скопировать сообщение. Скопируйте его вручную:\n\n' + message);
     
