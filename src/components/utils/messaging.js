@@ -1,7 +1,7 @@
 // utils/messaging.js
 export const sendToTelegram = (product, chatId = "Artur0192121") => {
 	const productUrl = `https://${window.location.hostname}/product/${product.id}`;
-	const message = `📦 *Название:* ${product.name}\n📝 *Описание:* ${product.description}\n💰 *Цена:* ${product.price} դրամ.\n🖼️ *Изображение:* ${product.images[0].thumbnail}\n🔗 *Ссылка:* ${productUrl}`;	const telegramUrl = `https://t.me/${chatId}?text=${encodeURIComponent(message)}`;
+	const message = `📦 *Название:* ${product.name}\n📝 *Описание:* ${product.description}\n💰 *Цена:* ${product.price} դրամ.\n || 🖼️ *Изображение:* ${product.images[0].thumbnail} || \n🔗 *Ссылка:* ${productUrl}`;	const telegramUrl = `https://t.me/${chatId}?text=${encodeURIComponent(message)}`;
 	window.location.href = telegramUrl;
 };
 
