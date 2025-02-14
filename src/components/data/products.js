@@ -213,7 +213,7 @@ const products = [
 	{
     id: 17,
     category: "Nissan Teana J31",
-		qty: '1',
+		qty: '0',
     name: "Դիմացի շթի սալյասկեք",
     description: "",
 		price: "5000",
