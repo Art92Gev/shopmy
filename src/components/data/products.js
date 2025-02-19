@@ -146,7 +146,7 @@ const products = [
 	{
     id: 12,
     category: "Nissan Teana J31",
-		qty: '1 կոմպլեկտ',
+		qty: '0',
     name: "Մոլդինգներ ՆՈՐ ",
     description: "",
 		price: "25000",
