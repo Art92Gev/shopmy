@@ -161,7 +161,7 @@ const products = [
 	{
     id: 13,
     category: "Nissan Teana J31",
-		qty: '4 կոմպլեկտ',
+		qty: '2 կոմպլեկտ և 2 հետևի',
     name: "Շթերի նիկելներ ՆՈՐ 1 հատի գին",
     description: "",
 		price: "9000",
